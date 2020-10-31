@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LuisHuacon_Examen.Registro">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="1" Padding="150,10">
+                <Label x:Name="txtlabelUsuario"></Label>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Padding="30,20">
+                <Label Text="Nombre: "></Label>
+                <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre"/>
+                <Label Text="Monto Inicial: "></Label>
+                <Entry x:Name="txtMonto" Placeholder="Ingrese el Monto inicial"/>
+                <Label Text="Pago mensual: "></Label>
+                <Label x:Name="txtPago"></Label>
+
+                <Button Text="Calcular" Clicked="btnCalcular_Clicked"></Button>
+
+                <Button Text="Resumen" Clicked="btnResumen_Clicked"></Button>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

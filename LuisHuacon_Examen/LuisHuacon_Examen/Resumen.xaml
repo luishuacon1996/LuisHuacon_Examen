@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LuisHuacon_Examen.Resumen">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="1" Padding="150,10">
+                <Label x:Name="txtUsuario"></Label>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Padding="30,20">
+
+                <Label Text="Nombre: "></Label>
+                <Label x:Name="txtNombre" />
+                <Label Text="Pago Total: "></Label>
+                <Label x:Name="txtPagoTotal"></Label>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
